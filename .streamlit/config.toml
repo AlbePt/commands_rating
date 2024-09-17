@@ -1,1 +1,3 @@
-[theme]\nbase="dark"
+[theme]
+base = "dark"
+
