@@ -45,7 +45,7 @@ def main():
 
             with col1:
                 st.write('Участи в сборе для приюта домашних животных')
-                st.write('')
+                st.write('\n')
                 st.write('')
                 st.write('')
                 st.write('3 балла')
