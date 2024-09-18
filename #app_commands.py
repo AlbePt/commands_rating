@@ -44,8 +44,10 @@ def main():
             col1, col2 = st.columns(2)
 
             with col1:
-                st.image('Pets.jpg')
                 st.write('Участи в сборе для приюта домашних животных')
+                st.write('3 балла')
+                st.image('Pets.jpg')
+                
             
 
         except Exception as e:
