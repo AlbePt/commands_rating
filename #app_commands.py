@@ -40,7 +40,7 @@ def main():
             
             # Включаем отображение текста внутри баблов
             fig.update_traces(
-                marker=dict(opacity=data['Прозрачность']/10),
+                marker=dict(opacity=data['Прозрачность']/5),
                 textposition='middle center', 
                 textfont_size=12
             )
