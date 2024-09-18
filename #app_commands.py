@@ -45,14 +45,16 @@ def main():
 
             with col1:
                 st.image('Pets.jpg')
-                st.write('Участи в сборе для приюта домашних животных')
                 st.write('3 балла')
+                st.write('Участи в сборе для приюта домашних животных')
+                
             
             with col2:
                 st.image('notebook.jpg')
+                st.write('1 балла')
                 st.write('Наличие обложек на всех тетрадях,\n которые с собой (кроме 48 листов)')
                 st.write('Проверять буду на перемене перед геометрией')
-                st.write('1 балла')
+                
                 
         except Exception as e:
             st.error(f'Ошибка загрузки данных: {e}')
