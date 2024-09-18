@@ -41,6 +41,13 @@ def main():
             
             st.plotly_chart(fig)
 
+            col1, col2 = st.columns(2)
+
+            with col1:
+                st.image('Pets.jpg')
+                st.write('Участи в сборе для приюта домашних животных')
+            
+
         except Exception as e:
             st.error(f'Ошибка загрузки данных: {e}')
 
