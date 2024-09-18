@@ -44,21 +44,16 @@ def main():
             col1, col2 = st.columns(2)
 
             with col1:
-                st.write('Участи в сборе для приюта домашних животных')
-                st.write('')
-                st.write('')
-                st.write('')
-                st.write('')
-
-                st.write('3 балла')
                 st.image('Pets.jpg')
-
+                st.write('Участи в сборе для приюта домашних животных')
+                st.write('3 балла')
+            
             with col2:
+                st.image('notebook.jpg')
                 st.write('Наличие обложек на всех тетрадях,\n которые с собой (кроме 48 листов)')
                 st.write('Проверять буду на перемене перед алгеброй')
                 st.write('1 балла')
-                st.image('notebook.jpg')
-
+                
         except Exception as e:
             st.error(f'Ошибка загрузки данных: {e}')
 
