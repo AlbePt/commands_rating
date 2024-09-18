@@ -22,22 +22,28 @@ def main():
             data = load_data_from_google_sheet()
             
             # Создаем диаграмму бабла
+           # Нормализуем значения 'Балл' от 0 до 1
+            data['Прозрачность'] = data['Балл'] / data['Балл'].max()
+
             fig = px.scatter(
                 data, 
                 x='Команда', 
                 y='Балл', 
                 size='Размер', 
                 color='Цвет', 
-                text='Балл',  # Добавляем текст в баблы (здесь используется значение балла)
-                #title='Диаграмма бабла с текстом внутри баблов',
-                labels={'Команда': 'Команда', 'Балл': 'Балл'},
+                text='Балл',
+                labels={'Команда': '', 'Балл': ''},
                 hover_name='Команда',
-                color_discrete_map='identity',  # Используем цвета напрямую из столбца
-                size_max=50  # Устанавливаем максимальный размер бабла
+                color_discrete_map='identity',
+                size_max=50
             )
             
             # Включаем отображение текста внутри баблов
-            fig.update_traces(textposition='middle center', textfont_size=12)
+            fig.update_traces(
+                marker=dict(opacity=data['Прозрачность']),
+                textposition='middle center', 
+                textfont_size=12
+            )
             
             st.plotly_chart(fig)
             st.header('Дополнительные задания')
