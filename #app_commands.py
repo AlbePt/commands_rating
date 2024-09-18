@@ -59,7 +59,7 @@ def main():
                 st.image('books.jpg')
                 st.write('1 балла')
                 st.write('Наличие обложек на всех учебниках и дневнике,\n которые с собой')
-                st.write('Проверять буду на переменеах')
+                st.write('Проверять буду на переменах')
                 
                 
         except Exception as e:
