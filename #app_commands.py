@@ -40,7 +40,7 @@ def main():
             fig.update_traces(textposition='middle center', textfont_size=12)
             
             st.plotly_chart(fig)
-
+            st.head('Дополнительные задания')
             col1, col2 = st.columns(2)
 
             with col1:
