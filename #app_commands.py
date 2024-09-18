@@ -47,8 +47,12 @@ def main():
                 st.write('Участи в сборе для приюта домашних животных')
                 st.write('3 балла')
                 st.image('Pets.jpg')
-                
-            
+
+            with col2:
+                st.write('Наличие обложек на всех тетрадях,\n которые с собой (кроме 48 листов)')
+                st.write('Проверять буду на перемене перед алгеброй')
+                st.write('1 балла')
+                st.image('notebook.jpg')
 
         except Exception as e:
             st.error(f'Ошибка загрузки данных: {e}')
