@@ -50,16 +50,11 @@ def main():
             col1, col2 = st.columns(2)
 
             with col1:
-                st.image('Pets.jpg')
-                st.write('3 балла')
-                st.write('Участи в сборе для приюта домашних животных')
+
                 
             
             with col2:
-                st.image('books.jpg')
-                st.write('1 балла')
-                st.write('Наличие обложек на всех учебниках и дневнике,\n которые с собой')
-                st.write('Проверять буду на переменах')
+
                 
                 
         except Exception as e:
