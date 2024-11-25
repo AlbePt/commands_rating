@@ -7,7 +7,7 @@ import plotly.express as px
 # Функция для загрузки данных из опубликованной Google Таблицы
 def load_data_from_google_sheet():
     # Постоянная ссылка на CSV-файл из Google Таблицы
-    sheet_url = 'https://docs.google.com/spreadsheets/d/1mWUHRwdn6lJJhA9H4-izdppX9LP3rPon/edit?gid=1676659127#gid=1676659127&range=A1:D8'
+    sheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRrBjE7FGC1cQJ5ue4Xj_oP1oVUEV5M-uiRAZPGXS2zbmCMtMGPg4mMuYrVxDqoGw/pub?gid=1676659127&single=true&output=csv'
     # Чтение данных напрямую из ссылки на CSV
     data = pd.read_csv(sheet_url)
     return data
